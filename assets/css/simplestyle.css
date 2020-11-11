@@ -9,7 +9,7 @@ background-color: #bcb8b1;
 header
 {
 text-align: center;
-font-family: "Lily Script One";
+font-family: "Candal";
 padding: 20px;
 }
 
@@ -26,6 +26,16 @@ padding-top: 70px;
 padding-right: 100px;
 padding-bottom: 70px;
 padding-left: 100px;
+}
+
+h2, h3, h4, h5, h6
+{
+font-family: "Candal";	
+}
+
+h2
+{
+text-align: center;
 }
 
 h2
