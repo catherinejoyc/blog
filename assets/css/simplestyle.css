@@ -1,4 +1,10 @@
-﻿body
+﻿/*Forces the scrollbar to show even when it is not needed*/
+/*this prevents the page shift when switching to non-scrollable pages*/
+html {
+  overflow-y: scroll; 
+}
+
+body
 {
 max-width: 800px;
 margin: auto;
@@ -24,25 +30,59 @@ font-family: "Candal";
 padding: 20px;
 }
 
+/*---Navigation Bar---*/
+
 nav
 {
 background-color: #8a817c;
 
-padding-top: 5px;
-padding-right: 5px;
-padding-bottom: 5px;
-padding-left: 5px;
+padding: 10px 10px;
 
 text-align: center;
 font-weight: bold;
 color: #f4f3ee;
 }
 
+nav ul{
+margin: 0px;
+padding: 0px;
+}
+
+nav li{
+display: inline;
+margin: 0px;
+padding: 0px;
+}
+
 nav a
 {
-padding-right: 10px;
-padding-left: 10px;
+padding: 10px 10px;
+margin: 0px;
+
+text-decoration: none;
+color: #f4f3ee;
 }
+
+nav a:link {
+background-color: transparent;
+}
+
+nav a:visited {
+background-color: transparent;
+}
+
+nav a:hover {
+color: #463f3a;
+background-color: transparent;
+}
+
+nav a.active{
+color: #463f3a;
+background-color: transparent;
+}
+
+
+/*---Main Content---*/
 
 main
 {
@@ -73,28 +113,7 @@ h2
 color: #6153cc;
 }
 
-a:link {
-color: #463f3a;
-background-color: transparent;
-text-decoration: none;
-}
 
-a:visited {
-color: #463f3a;
-background-color: transparent;
-text-decoration: none;
-}
-
-a:hover {
-color: #6153cc;
-background-color: transparent;
-}
-
-a:active {
-color: yellow;
-background-color: transparent;
-text-decoration: underline;
-}
 
 /* CSS HEX https://coolors.co/463f3a-8a817c-bcb8b1-f4f3ee-6153cc */
 --dark-lava: #463f3a;
