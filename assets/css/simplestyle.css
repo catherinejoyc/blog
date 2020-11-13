@@ -1,16 +1,167 @@
 ﻿/*Forces the scrollbar to show even when it is not needed*/
 /*this prevents the page shift when switching to non-scrollable pages*/
 html {
-  overflow-y: scroll; 
+  overflow-y: scroll;
+  word-wrap: break-word;
 }
 
-body
-{
-max-width: 800px;
+body{
 margin: auto;
+
 font-family: "DM Sans";
-color: #463f3a;
-background-color: #bcb8b1;
+color: #ffffff;
+background-color: #343432;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+/* Header */
+header h1{
+margin: 0px;
+padding: 10px;
+
+background-color: #242423;
+
+text-align: center;
+font-family: "New Rocker";
+
+border-bottom-style: solid;
+border-color: #242423;
+border-width: 3px;
+}
+
+/* Columns*/
+.column {
+  float: left;
+}
+
+/* Left and right column */
+.column.side {
+width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Boxes */
+div.smallBox{
+margin: 40px;
+padding: 30px;
+
+background-color: #3e3e3d;
+
+border-style: solid;
+border-color: #242423;
+border-radius: 15px;
+border-width: 3px;
+}
+
+/*---Navigation Bar---*/
+
+div.smallBox ul{
+margin-top: 20px;
+padding: 0px;
+list-style-type: none;
+}
+
+div.smallBox li{
+margin-top: 5px;
+padding: 2px 30px;
+
+display: block;
+
+border-style: solid;
+border-width: 2px;
+}
+
+div.smallBox a{
+margin: 0px;
+
+text-decoration: none;
+color: #ffffff;
+}
+
+div.smallBox li:hover {
+background-image: linear-gradient(#D7263D, #3e3e3d);
+border-color: transparent;
+}
+
+div.smallBox li.active{
+background-image: linear-gradient(#D7263D, #242423);
+border-color: #242423;
+}
+
+div.smallBox h2{
+margin: 0px;
+
+font-family: "New Rocker";
+text-align: center;
+}
+
+/*---Main Content---*/
+main
+{
+border-style: solid;
+border-color: #242423;
+border-radius: 15px;
+border-width: 3px;
+
+margin: 30px 10px;
+
+padding-top: 70px;
+padding-right: 100px;
+padding-bottom: 70px;
+padding-left: 100px;
+
+background-color:#3e3e3d;
+}
+
+h2
+{
+text-align: center;
+}
+
+/*---Footer---*/
+footer{
+margin: auto;
+text-align: center;
+background-color:#242423;
+}
+
+footer p{
+margin: 0px;
+padding: 10px;
+font-size: 12px;
 }
 
 section
@@ -18,114 +169,7 @@ section
 padding-bottom: 100px;
 border-bottom-style: solid;
 border-width: 1px;
-border-color: #8a817c;
-}
-
-header
-{
-background-color: #463f3a;
-text-align: center;
-color: #f4f3ee;
-font-family: "Candal";
-padding: 20px;
-}
-
-/*---Navigation Bar---*/
-
-nav
-{
-background-color: #8a817c;
-
-padding: 10px;
-
-text-align: center;
-font-weight: bold;
-color: #f4f3ee;
-}
-
-nav ul{
-margin: 0px;
-padding: 0px;
-}
-
-nav li{
-display: inline;
-margin: 0px;
-padding: 0px;
-}
-
-nav a
-{
-padding: 10px 10px;
-margin: 0px;
-
-text-decoration: none;
-color: #f4f3ee;
-}
-
-nav a:link {
-background-color: transparent;
-}
-
-nav a:visited {
-background-color: transparent;
-}
-
-nav a:hover {
-color: #463f3a;
-background-color: transparent;
-}
-
-nav a.active{
-color: #463f3a;
-background-color: transparent;
-}
-
-
-/*---Main Content---*/
-
-main
-{
-background-color: #f4f3ee;
-border-color: #8a817c;
-border-style: solid;
-border-width: 1px;
-
-padding-top: 70px;
-padding-right: 100px;
-padding-bottom: 70px;
-padding-left: 100px;
-}
-
-h2, h3, h4, h5, h6
-{
-font-family: "Candal";
-margin: 5px;
-}
-
-h2
-{
-text-align: center;
-}
-
-h2
-{
-color: #6153cc;
-}
-
-
-/*---Footer---*/
-footer{
-background-color: #8a817c;
-
-text-align: center;
-}
-
-footer p{
-margin: 0px;
-padding: 10px;
-font-size: 12px;
-color: #f4f3ee;
+border-color: #343432;
 }
 
 /* CSS HEX https://coolors.co/463f3a-8a817c-bcb8b1-f4f3ee-6153cc */
@@ -134,3 +178,17 @@ color: #f4f3ee;
 --pale-silver: #bcb8b1;
 --alabaster: #f4f3ee;
 --iris: #6153cc;
+
+/* CSS HEX https://coolors.co/242423-343432-3e3e3d-484847-ffffff */
+--eerie-black: #242423;
+--jet: #343432;
+--jet-2: #3e3e3d;
+--davys-grey: #484847;
+--white: #ffffff;
+
+/* CSS HEX https://coolors.co/242423-343432-3e3e3d-d7263d-ffffff */
+--eerie-black: #242423;
+--jet: #343432;
+--jet-2: #3e3e3d;
+--crimson: #d7263dff;
+--white: #ffffff;
