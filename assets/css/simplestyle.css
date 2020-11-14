@@ -4,86 +4,152 @@ html {
   overflow-y: scroll; 
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Body*/
 body
 {
-max-width: 800px;
 margin: auto;
+background-color: black;
 font-family: "DM Sans";
-color: #463f3a;
-background-color: #bcb8b1;
 }
 
-section
-{
-padding-bottom: 100px;
-border-bottom-style: solid;
-border-width: 1px;
-border-color: #8a817c;
-}
-
-header
-{
-background-color: #463f3a;
+/* Header */
+div.header{
 text-align: center;
-color: #f4f3ee;
-font-family: "Candal";
-padding: 20px;
+color: white;
+}
+div.header h1{
+margin: 0px;
+padding: 40px;
+
+font-size: 48px;
 }
 
-/*---Navigation Bar---*/
+/* Navigation Bar */
+div.nav{
+padding: 5px;
 
-nav
-{
-background-color: #8a817c;
-
-padding: 10px;
+border-top-style: solid;
+border-width: 1px;
 
 text-align: center;
 font-weight: bold;
-color: #f4f3ee;
+color: white;
 }
-
-nav ul{
+div.nav ul{
 margin: 0px;
 padding: 0px;
 }
-
-nav li{
+div.nav li{
 display: inline;
 margin: 0px;
 padding: 0px;
 }
-
-nav a
+div.nav a
 {
-padding: 10px 10px;
+padding: 0px 20px;
 margin: 0px;
 
 text-decoration: none;
-color: #f4f3ee;
+color: white;
+font-size: 14px;
 }
-
-nav a:link {
+div.nav a:link {
 background-color: transparent;
 }
-
-nav a:visited {
+div.nav a:visited {
 background-color: transparent;
 }
-
-nav a:hover {
-color: #463f3a;
+div.nav a:hover {
 background-color: transparent;
+color: #02fff8;
+}
+div.nav a.active{
+background-color: transparent;
+color: #02fff8;
 }
 
-nav a.active{
-color: #463f3a;
-background-color: transparent;
+/* Columns */
+
+.column {
+  float: left;
 }
 
+.column.big {
+ width: 60%;
+ background-color: white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
 
-/*---Main Content---*/
+/* Sidebar */
+.column.small.left {
+  width: 20%;
+  background-color: #02fff8;
+}
 
+div.sidebar ul{
+margin: 30px;
+padding: 0px;
+
+border-top-style: solid;
+border-left-style: solid;
+border-right-style: solid;
+
+list-style-type: none;
+}
+div.sidebar a
+{
+padding: 2.5px 10px;
+margin: 0px;
+display: block;
+
+border-bottom-style: solid;
+
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+div.sidebar a:link {
+background-color: transparent;
+}
+div.sidebar a:visited {
+background-color: transparent;
+}
+div.sidebar a:hover {
+background-color: black;
+border-color: black;
+color: white;
+}
+div.sidebar a.active{
+background-color: black;
+border-color: black;
+color: white;
+}
+
+/* Main */
+.whiteBox{
+background-color: white;
+padding: 30px;
+}
 main
 {
 background-color: #f4f3ee;
@@ -99,25 +165,34 @@ padding-left: 100px;
 
 h2, h3, h4, h5, h6
 {
-font-family: "Candal";
-margin: 5px;
+margin: 0px;
 }
 
 h2
 {
+background-color: #02fff8;
 text-align: center;
 }
 
-h2
-{
-color: #6153cc;
+/* Right column */
+.column.small.right {
+width: 19.85%;
+margin-left: 0.15%;
+background-color: #02fff8;
 }
 
+.contact{
+margin: 30px;
+padding: 0px;
+}
 
 /*---Footer---*/
 footer{
-background-color: #8a817c;
-
+margin-top: 5px;
+background-color: black;
+border-top-style: solid;
+border-width: 1px;
+border-color: white;
 text-align: center;
 }
 
@@ -128,9 +203,7 @@ font-size: 12px;
 color: #f4f3ee;
 }
 
-/* CSS HEX https://coolors.co/463f3a-8a817c-bcb8b1-f4f3ee-6153cc */
---dark-lava: #463f3a;
---middle-grey: #8a817c;
---pale-silver: #bcb8b1;
---alabaster: #f4f3ee;
---iris: #6153cc;
+/* CSS HEX https://coolors.co/0a0a0a-02fff8-ffffff */
+--rich-black-fogra-39: #0a0a0aff;
+--aqua: #02fff8ff;
+--white: #ffffffff;
