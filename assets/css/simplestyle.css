@@ -1,7 +1,7 @@
 ﻿/*Forces the scrollbar to show even when it is not needed*/
 /*this prevents the page shift when switching to non-scrollable pages*/
 html {
-  overflow-y: scroll; 
+overflow-y: scroll; 
 }
 
 /* Scrollbar */
@@ -38,6 +38,8 @@ font-size: 48px;
 /* Navigation Bar */
 div.nav{
 padding: 5px;
+
+background-color: black;
 
 border-top-style: solid;
 border-width: 1px;
@@ -79,8 +81,19 @@ background-color: transparent;
 color: #02fff8;
 }
 
-/* Columns */
+/* Home */
+.home{
+height: 100%;
+background-color:white;
+}
 
+.home .content{
+height: 100%;
+background-color: white;
+color: black;
+}
+
+/* Columns */
 .column {
   float: left;
 }
@@ -110,10 +123,6 @@ div.sidebar ul{
 margin: 30px;
 padding: 0px;
 
-border-top-style: solid;
-border-left-style: solid;
-border-right-style: solid;
-
 list-style-type: none;
 }
 div.sidebar a
@@ -122,7 +131,7 @@ padding: 2.5px 10px;
 margin: 0px;
 display: block;
 
-border-bottom-style: solid;
+border-bottom-style: dashed;
 
 text-decoration: none;
 font-weight: bold;
