@@ -27,8 +27,8 @@ font-family: "DM Sans";
 div.header{
 background-color: black;
 
-border-bottom-style: solid;
-border-width: 1px;
+/*border-bottom-style: solid;
+border-width: 1px;*/
 
 text-align: center;
 color: white;
@@ -205,6 +205,10 @@ text-align: center;
 .contact{
 margin: 30px;
 padding: 0px;
+}
+
+.contact h1{
+text-align: center;
 }
 
 /*---Footer---*/
