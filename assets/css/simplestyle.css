@@ -121,9 +121,7 @@ background-color: #02fff8;
  background-color: white;
 }
 .column.small.right {
-width: 19.85%;
-margin-left: 0.15%;
-background-color: #02fff8;
+width: 20%;
 }
 .row:after {
   content: "";
@@ -203,12 +201,39 @@ text-align: center;
 
 /* Right column */
 .contact{
-margin: 30px;
-padding: 0px;
+margin: 0px;
+padding: 20px;
+background-color: #02fff8;
 }
-
 .contact h1{
+margin: 0px;
+padding: 0px;
 text-align: center;
+}
+.contact ul{
+margin: 5px;
+padding: 0px;
+list-style-type: none;
+}
+.contact li{
+padding: 0px;
+height: 25px;
+}
+.contact img{
+height: 25px;
+}
+.contact h3{
+margin-top: 20px;
+}
+.contact a:link{
+color: black;
+}
+.contact a:visited{
+color: black;
+}
+.contact a:hover{
+color: black;
+font-weight: bold;
 }
 
 /*---Footer---*/
