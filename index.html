@@ -9,40 +9,51 @@
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
 
-	<title>catherinejoyc | Home</title>
-
-	<style>
-	html, body {
-	height: 100%;
-	margin: 0;
-	}
-}
-</style>
+	<title>catherinejoyc</title>
 </head>
 
 <body>
-	<div class="home">
-		<div class="nav">
-			<ul>
-				<li><a class="active" href="index.html" >Home</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="skills.html">Skills</a></li>
-				<li><a href="achievements.html">Achievements</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-		
-		<div class="content">
-			<div class="absoluteCenter">
-				<h1 style="font-size:60px; margin:0px;">catherinejoyc</h1>
-				<p style="font-size:42px; margin:0px;">web & game development</p>
-			</div>			
+	<!-- Sidebar -->
+	<div class="sidebar">
+		<ul>
+			<li><a class="navItem" href="#home" onclick="setActiveLink(event, "home")">Home</a></li>
+			<li><a class="navItem" href="#skills">Skills</a></li>
+			<li><a class="navItem" href="#portfolio">Portfolio</a></li>
+			<li><a class="navItem" href="#about-me">About</a></li>
+			<li><a class="navItem" href="#contact">Contact</a></li>
+		</ul>
+	</div>
+
+	<!-- Content -->
+	<div class="content">
+		<!-- Home -->
+		<div class="section" id="home">
 		</div>
 
+		<!-- Skills -->
+		<div class="section" id="skills">
+		</div>
+
+		<!-- Portfolio -->
+		<div class="section" id="portfolio">
+		</div>
+
+		<!-- About me -->
+		<div class="section" id="about-me">
+		</div>
+
+		<!-- Contact -->
+		<div class="section" id="contact">
+		</div>
+
+		<!--
 		<footer>
-		<p>&copy; 2020 Catherine Calupas. All rights reserved. | <a href="contact.html">Contact</a></p>
+			<p>&copy; 2020 Catherine Calupas. All rights reserved. | <a href="contact.html">Contact</a></p>
 		</footer>
+		-->
 	</div>
 </body>
+
+<script src="/assets/js/main.js"></script>
+
 </html>
