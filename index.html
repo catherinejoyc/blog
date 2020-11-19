@@ -15,12 +15,13 @@
 <body>
 	<!-- Sidebar -->
 	<div class="sidebar">
+		<!-- Navbar -->
 		<ul>
-			<li><a class="navItem" href="#home" onclick="setActiveLink(event, "home")">Home</a></li>
-			<li><a class="navItem" href="#skills">Skills</a></li>
-			<li><a class="navItem" href="#portfolio">Portfolio</a></li>
-			<li><a class="navItem" href="#about-me">About</a></li>
-			<li><a class="navItem" href="#contact">Contact</a></li>
+			<li><a onclick="activateNavItem('navItemHome')" class="navItem active" id="navItemHome" href="#home">Home</a></li>
+			<li><a onclick="activateNavItem('navItemSkills')" class="navItem" id="navItemSkills" href="#skills">Skills</a></li>
+			<li><a onclick="activateNavItem('navItemPortfolio')" class="navItem" id="navItemPortfolio" href="#portfolio">Portfolio</a></li>
+			<li><a onclick="activateNavItem('navItemAboutMe')" class="navItem" id="navItemAboutMe" href="#about-me">About Me</a></li>
+			<li><a onclick="activateNavItem('navItemContact')" class="navItem" id="navItemContact" href="#contact">Contact</a></li>
 		</ul>
 	</div>
 
@@ -28,6 +29,12 @@
 	<div class="content">
 		<!-- Home -->
 		<div class="section" id="home">
+			<div class="homeContent">
+				<div>
+					<h1>catherinejoyc</h1>
+					<h3>web & game development</h3>
+				</div>
+			</div>
 		</div>
 
 		<!-- Skills -->
@@ -44,16 +51,15 @@
 
 		<!-- Contact -->
 		<div class="section" id="contact">
+			<footer>
+				<p>&copy; 2020 Catherine Calupas. All rights reserved.</p>
+			</footer>
 		</div>
 
-		<!--
-		<footer>
-			<p>&copy; 2020 Catherine Calupas. All rights reserved. | <a href="contact.html">Contact</a></p>
-		</footer>
-		-->
+
 	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/main.js"></script>
 </body>
-
-<script src="/assets/js/main.js"></script>
-
 </html>
