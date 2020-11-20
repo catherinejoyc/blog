@@ -111,42 +111,38 @@ position: relative;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.homeContent h1{
+
+h1{
   font-size: 5vw;
   margin: 0px;
 }
-.homeContent h3{
+h3{
   font-size: 2vw;
-  margin: 5px;
+  margin: 0px;
 }
 
-/* Main */
-.whiteBox{
-background-color: white;
-padding: 30px;
+/* Skills */
+.column{
+float: left;
+width: 23.33%;
+padding: 5%;
 }
-main
-{
-background-color: #f4f3ee;
-border-color: #8a817c;
-border-style: solid;
-border-width: 1px;
-
-padding-top: 70px;
-padding-right: 100px;
-padding-bottom: 70px;
-padding-left: 100px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-h2, h3, h4, h5, h6
-{
-margin: 0px;
+/* About Me */
+.columnLeft{
+float: left;
+width: 20%;
+padding: 5%;
 }
-
-h2
-{
-background-color: #02fff8;
-text-align: center;
+.columnRight{
+float: left;
+width: 60%;
+padding: 5%;
 }
 
 /* Right column */
@@ -204,7 +200,7 @@ font-size: 12px;
 color: #f4f3ee;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* On screens that are less than 700px wide */
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -216,11 +212,14 @@ color: #f4f3ee;
     padding-left: 10px;
   }
   div.content {margin-left: 0;}
-  .homeContent h1{font-size: 9vw;}
-  .homeContent h3{font-size: 4vw;}
+  h1{font-size: 9vw;}
+  h3{font-size: 4vw; margin-left: 0px;}
+  .column {width:100%;}
+  .columnLeft {width:100%;}
+  .columnRight {width:100%;}
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* On screens that are less than 400px */
 @media screen and (max-width: 400px) {
   .sidebar a {
     padding-left: 0px;
