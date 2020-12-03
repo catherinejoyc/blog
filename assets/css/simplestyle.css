@@ -15,6 +15,10 @@ overflow-y: scroll;
   background: white;
 }
 
+p{
+font-size: 20px;
+}
+
 /* Body*/
 body
 {
@@ -84,15 +88,17 @@ color: #02fff8;
 }
 
 /* Home */
-.home{
+.singlePage{
 height: 100%;
 display: flex;
 flex-direction:column;
 background-color:white;
+text-align: center;
 }
 
-.home .content{
+.singlePage .content{
 height: 100%;
+width: 100%;
 
 background-color: white;
 
@@ -101,7 +107,7 @@ color: black;
 
 .absoluteCenter{
 margin: 0;
-position: absolute;
+position: relative;
 top: 46.5%;
 left: 50%;
 -ms-transform: translate(-50%, -50%);
@@ -123,6 +129,7 @@ background-color: #02fff8;
 .column.small.right {
 width: 20%;
 }
+
 .row:after {
   content: "";
   display: table;
@@ -199,11 +206,10 @@ background-color: #02fff8;
 text-align: center;
 }
 
-/* Right column */
+/*---Contact---*/
 .contact{
 margin: 0px;
 padding: 20px;
-background-color: #02fff8;
 }
 .contact h1{
 margin: 0px;
@@ -220,7 +226,7 @@ padding: 0px;
 height: 25px;
 }
 .contact img{
-height: 25px;
+height: 30px;
 }
 .contact h3{
 margin-top: 20px;
@@ -254,6 +260,6 @@ color: #f4f3ee;
 }
 
 /* CSS HEX https://coolors.co/0a0a0a-02fff8-ffffff */
---rich-black-fogra-39: #0a0a0aff;
---aqua: #02fff8ff;
---white: #ffffffff;
+--rich-black-fogra-39: #0a0a0a;
+--aqua: #02fff8;
+--white: #ffffff;
