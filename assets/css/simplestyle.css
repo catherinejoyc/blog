@@ -132,6 +132,34 @@ padding: 5%;
   display: table;
   clear: both;
 }
+.skillContainer {
+  width: 100%;
+  background-color: white;
+}
+.skills {
+  text-align: right;
+  padding: 5px auto;
+  color: white;
+  background-color: black;
+}
+.unity {width: 100%;}
+.cSharp {width: 100%;}
+.gameMaker {width: 30%;}
+.pico8 {width: 20%;}
+.unreal {width: 20%;}
+.html {width: 90%;}
+.css {width: 90%;}
+.javaScript {width: 60%;}
+.photoshop {width: 100%;}
+.krita {width: 100%;}
+.illustrator {width: 60%;}
+.indesign {width: 60%;}
+.clipStudioPaint {width: 90%;}
+.github {width: 85%;}
+
+#skills h4{
+ margin: 15px 0px;
+}
 
 /* About Me */
 .columnLeft{
