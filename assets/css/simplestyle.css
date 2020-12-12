@@ -86,6 +86,7 @@ background-color: #02fff8;
 }
 #portfolio{
 background-color: black;
+color: white;
 }
 #about-me{
 background-color: #02fff8;
@@ -159,6 +160,11 @@ padding: 5%;
 
 #skills h4{
  margin: 15px 0px;
+}
+
+/* Portfolio */
+.sectionContent{
+padding:5%;
 }
 
 /* About Me */
