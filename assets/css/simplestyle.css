@@ -164,7 +164,36 @@ padding: 5%;
 
 /* Portfolio */
 .sectionContent{
-padding:5%;
+padding: 5%;
+box-sizing: border-box;
+height: 100%;
+}
+.projectTitle{
+font-size: 35px;
+text-align: center;
+}
+.slideshowContainer{
+box-sizing: border-box;
+height: calc(100% - 3.17em);
+padding: 2.5% 0px;
+}
+.heroImage{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/profile.jfif');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.heroText {
+  text-align: left;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: white;
+}
+#portfolio h4{
+margin: 0px;
 }
 
 /* About Me */
