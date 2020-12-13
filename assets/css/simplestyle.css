@@ -170,24 +170,54 @@ height: 100%;
 }
 .projectTitle{
 font-size: 35px;
-text-align: center;
+text-align: left;
 }
 .slideshowContainer{
 box-sizing: border-box;
 height: calc(100% - 3.17em);
 padding: 2.5% 0px;
+position: relative;
 }
-.heroImage{
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slide{
+  display: none;
+  height: 100%;
+}
+.slideImage{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/profile.jfif');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+
+  animation: fadeIn 0.5s;
+  animation-timing-function: linear;
 }
-.heroText {
+.slideInfo {
   text-align: left;
   position: absolute;
+  width: 33%;
   top: 2%;
   left: 2%;
   color: white;
@@ -261,6 +291,16 @@ margin: 0px;
 padding: 10px;
 font-size: 12px;
 color: #f4f3ee;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {filter: opacity(0%)}
+  to {filter: opacity(100%)}
+}
+@keyframes unblur {
+  from {filter: blur(100px)}
+  to {filter: blur(0px)}
 }
 
 /* On screens that are less than 700px wide */
