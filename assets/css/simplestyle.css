@@ -217,14 +217,21 @@ position: relative;
 .slideInfo {
   text-align: left;
   position: absolute;
-  width: 33%;
-  top: 2%;
+  width: 40%;
+  top: 4%;
   left: 2%;
   color: white;
+}
+.slideLinks{
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
 }
 #portfolio h4{
 margin: 0px;
 }
+
+#wier{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/wier_vn.jpg');}
 
 /* About Me */
 .columnLeft{
