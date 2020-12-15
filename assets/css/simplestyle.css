@@ -157,6 +157,7 @@ padding: 5%;
 .indesign {width: 60%;}
 .clipStudioPaint {width: 90%;}
 .github {width: 85%;}
+.maya {width: 85%;}
 
 #skills h4{
  margin: 15px 0px;
@@ -174,9 +175,11 @@ text-align: left;
 }
 .slideshowContainer{
 box-sizing: border-box;
-height: calc(100% - 3.17em);
-padding: 2.5% 0px;
+height: calc(100% - 3.17em - 5%);
+margin: 2.5%;
 position: relative;
+
+border-style: solid;
 }
 .prev, .next {
   cursor: pointer;
@@ -227,11 +230,20 @@ position: relative;
   right: 2%;
   bottom: 2%;
 }
+.slideLinks a{
+  color: white;
+}
+.slideLinks a:hover{
+  color: #02fff8;
+}
 #portfolio h4{
 margin: 0px;
 }
 
 #wier{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/wier_vn.jpg');}
+#camazotz{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/camazotz_bigBat.jpg');}
+#mino{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/mino_bear.jpg');}
+#kinayaStudios{background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/kinayastudios.jpg');}
 
 /* About Me */
 .columnLeft{
