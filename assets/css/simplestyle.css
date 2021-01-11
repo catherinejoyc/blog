@@ -9,10 +9,10 @@ overflow-y: scroll;
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: black;
+  background: #1f1f1f;
 }
 ::-webkit-scrollbar-thumb {
-  background: white;
+  background: #F3EFFA;
 }
 
 /* Body*/
@@ -30,16 +30,16 @@ height: 100%;
 width: 15%;
 padding: 0px;
 position: fixed;
-background-color: black;
+background-color: #1f1f1f;
 
 font-weight: bold;
-color: white;
+color: #F3EFFA;
 }
 .sidebar ul{
 margin: 0px;
 padding: 30px;
 
-background-color: black;
+background-color: #1f1f1f;
 list-style-type: none;
 }
 .navItem{
@@ -54,19 +54,19 @@ text-decoration: none;
 }
 .sidebar a:link {
 background-color: transparent;
-color: white;
+color: #F3EFFA;
 }
 .sidebar a:visited {
 background-color: transparent;
-color: white;
+color: #F3EFFA;
 }
 .sidebar a:hover {
-background-color: black;
-color: #02fff8;
+background-color: #1f1f1f;
+color: #9974D7;
 }
 .sidebar a.active{
-background-color: black;
-color: #02fff8;
+background-color: #1f1f1f;
+color: #9974D7;
 }
 
 /* Content */
@@ -78,21 +78,22 @@ margin-left: 15%;
 height: 100%;
 }
 #home{
-background-color: white;
+background-color: #F3EFFA;
   position: relative;
 }
 #skills{
-background-color: #02fff8;
+background-color: #9974D7;
 }
 #portfolio{
-background-color: black;
-color: white;
+background-color: #1f1f1f;
+color: #F3EFFA;
 }
 #about-me{
-background-color: #02fff8;
+background-color: #9974D7;
+font-weight: bold;
 }
 #contact{
-background-color: white;
+background-color: #F3EFFA;
 position: relative;
 }
 
@@ -135,13 +136,13 @@ padding: 5%;
 }
 .skillContainer {
   width: 100%;
-  background-color: white;
+  background-color: #F3EFFA;
 }
 .skills {
   text-align: right;
   padding: 5px auto;
-  color: white;
-  background-color: black;
+  color: #F3EFFA;
+  background-color: #1f1f1f;
 }
 .unity {width: 100%;}
 .cSharp {width: 100%;}
@@ -188,7 +189,7 @@ border-style: solid;
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #F3EFFA;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -223,7 +224,7 @@ border-style: solid;
   width: 40%;
   top: 4%;
   left: 2%;
-  color: white;
+  color: #F3EFFA;
 }
 .slideLinks{
   position: absolute;
@@ -231,10 +232,10 @@ border-style: solid;
   bottom: 2%;
 }
 .slideLinks a{
-  color: white;
+  color: #F3EFFA;
 }
 .slideLinks a:hover{
-  color: #02fff8;
+  color: #9974D7;
 }
 #portfolio h4{
 margin: 0px;
@@ -250,18 +251,25 @@ margin: 0px;
 float: left;
 width: 20%;
 padding: 5%;
+padding-top: 2.5%;
 }
 .columnRight{
 float: left;
 width: 60%;
 padding: 5%;
+padding-top: 2.5%;
+padding-left: 0%;
+}
+.profilePic{
+  border: solid #1f1f1f 5px;
+  border-radius: 20px;
 }
 
 /* Right column */
 .contact{
 margin: 0px;
 padding: 20px;
-background-color: #02fff8;
+background-color: #9974D7;
 }
 .contact h1{
 margin: 0px;
@@ -284,19 +292,19 @@ height: 25px;
 margin-top: 20px;
 }
 .contact a:link{
-color: black;
+color: #1f1f1f;
 }
 .contact a:visited{
-color: black;
+color: #1f1f1f;
 }
 .contact a:hover{
-color: black;
+color: #1f1f1f;
 font-weight: bold;
 }
 
 /*---Footer---*/
 footer{
-background-color: black;
+background-color: #1f1f1f;
 text-align: center;
 
 position: absolute;
@@ -309,7 +317,7 @@ footer p{
 margin: 0px;
 padding: 10px;
 font-size: 12px;
-color: #f4f3ee;
+color: #F3EFFA;
 }
 
 /* Animations */
@@ -350,7 +358,4 @@ color: #f4f3ee;
   }
 }
 
-/* CSS HEX https://coolors.co/0a0a0a-02fff8-ffffff */
---rich-black-fogra-39: #0a0a0a;
---aqua: #02fff8;
---white: #ffffff;
+/* CSS HEX https://coolors.co/1f1f1f-9974d7-f3effa */
